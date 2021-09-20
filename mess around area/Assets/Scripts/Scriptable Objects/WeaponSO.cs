@@ -4,8 +4,4 @@ using UnityEngine;
 public class WeaponSO : CollectableSO
 {
     public int pwrlvl;
-    public GameObject art;
-    public Material artMaterial;
-    
-    
-}
+ }
