@@ -6,6 +6,7 @@ public class CollectableSO : ScriptableObject
 {
     public bool collected;
     public int costValue;
-    public GameObject art;
+    public GameObject art3d;
+    public Sprite art2d;
     public Color artColorTint = Color.blue;
 }
