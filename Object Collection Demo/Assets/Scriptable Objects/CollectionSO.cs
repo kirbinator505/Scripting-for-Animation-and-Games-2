@@ -1,6 +1,5 @@
- using System.Collections.Generic;
+using System.Collections.Generic;
 using UnityEngine;
-
 [CreateAssetMenu]
 public class CollectionSO : ScriptableObject
 {
@@ -10,6 +9,5 @@ public class CollectionSO : ScriptableObject
     {
         collection.Add(obj);
         obj.collected = true;
-        
     }
 }
