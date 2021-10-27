@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -23,7 +21,6 @@ public class TEMP_PlayerBehavior : MonoBehaviour
             direction.y = jumpforce;
             playerRB.AddForce(direction, ForceMode2D.Impulse);
         }
-
         Player_Height.value = playerRB.position.y;
     }
 }

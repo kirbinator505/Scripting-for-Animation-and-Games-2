@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 328386205}
   - component: {fileID: 328386209}
   - component: {fileID: 328386208}
+  - component: {fileID: 328386210}
   m_Layer: 0
   m_Name: platform
   m_TagString: Untagged
@@ -248,6 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player_height: {fileID: 11400000, guid: 25d085c8afdcf754786cf94364aa835d, type: 2}
+  platform_speed: {fileID: 11400000, guid: b5adaaa18d55bf64c85b36b6f8128d8c, type: 2}
 --- !u!50 &328386209
 Rigidbody2D:
   serializedVersion: 4
@@ -269,6 +271,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &328386210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328386204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e47ed787acae1243a7aed401f34b91f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LowerBound: {fileID: 11400000, guid: 1764c8d8bcae54649a06686f1296ffc0, type: 2}
 --- !u!1 &410278147
 GameObject:
   m_ObjectHideFlags: 0
