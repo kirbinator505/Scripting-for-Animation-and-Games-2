@@ -7,7 +7,7 @@ public class PlatformBehavior : MonoBehaviour
 {
     private Collider2D solid;
     private Rigidbody2D body;
-    public Float_SO player_height, platform_speed;
+    public Float_SO player_height, platform_speed, player_obj_height;
 
     private void Awake()
     {
@@ -18,11 +18,11 @@ public class PlatformBehavior : MonoBehaviour
 
     void Update()
     {
-        if (body.position.y < player_height.value)
+        if (body.position.y < player_height.value - player_obj_height.value)
         {
             solid.isTrigger = false; //sets the collider to no longer be a trigger so it stops the player
         }
-        else if (body.position.y > player_height.value)
+        else if (body.position.y > player_height.value + player_obj_height.value)
         {
             solid.isTrigger = true; //sets the collider to trigger if the player falls below it
         }

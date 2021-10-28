@@ -9,7 +9,7 @@ public class DetectOOBBehavior : MonoBehaviour
     {
         if (transform.position.y < LowerBound.value)
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }

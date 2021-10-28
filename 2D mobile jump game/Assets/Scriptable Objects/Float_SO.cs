@@ -14,4 +14,17 @@ public class Float_SO : ScriptableObject
     {
         value = num;
     }
+
+    public void HalfValue(float num)
+    {
+        value = num / 2;
+    }
+
+    public void LimitedAddToValue(float num, float limit)
+    {
+        if (value < limit)
+        {
+            value += num;
+        }
+    }
 }
