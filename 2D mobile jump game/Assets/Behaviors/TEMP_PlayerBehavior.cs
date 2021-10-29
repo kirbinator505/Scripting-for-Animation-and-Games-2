@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class TEMP_PlayerBehavior : MonoBehaviour
@@ -7,6 +8,7 @@ public class TEMP_PlayerBehavior : MonoBehaviour
     private Vector2 direction; //temp
     public Float_SO Player_Height;
     private float jumpforce = 10f;
+    public UnityEvent SetGameActive;
 
     void Awake()
     {
@@ -20,6 +22,7 @@ public class TEMP_PlayerBehavior : MonoBehaviour
         {
             direction.y = jumpforce;
             playerRB.AddForce(direction, ForceMode2D.Impulse);
+            SetGameActive.Invoke();
         }
         Player_Height.value = playerRB.position.y;
     }

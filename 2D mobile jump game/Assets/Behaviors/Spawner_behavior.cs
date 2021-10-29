@@ -7,11 +7,11 @@ public class Spawner_behavior : MonoBehaviour
     private Transform point;
     public Float_SO Delay;
     public float random;
-    
-    void Start()
+
+    public void StartSpawner()
     {
         point = GetComponent<Transform>();
-        InvokeRepeating(nameof(SpawnObj), 0,Delay.value);
+        InvokeRepeating(nameof(SpawnObj), 0, Delay.value);
     }
 
     void SpawnObj()
@@ -21,5 +21,10 @@ public class Spawner_behavior : MonoBehaviour
         {
             Instantiate<GameObject>(Obj, point);
         }
+    }
+
+    public void Stop()
+    {
+        CancelInvoke(nameof(SpawnObj));
     }
 }

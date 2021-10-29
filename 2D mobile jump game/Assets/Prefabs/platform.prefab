@@ -149,6 +149,7 @@ MonoBehaviour:
   player_height: {fileID: 11400000, guid: 25d085c8afdcf754786cf94364aa835d, type: 2}
   platform_speed: {fileID: 11400000, guid: b5adaaa18d55bf64c85b36b6f8128d8c, type: 2}
   player_obj_height: {fileID: 11400000, guid: 44a8e2d3fb09b314c8b4a0012a637d02, type: 2}
+  gamePlaying: {fileID: 11400000, guid: 6f1c3c982d4f2704ba5288a7ed7a6be7, type: 2}
 --- !u!114 &481111961494550357
 MonoBehaviour:
   m_ObjectHideFlags: 0

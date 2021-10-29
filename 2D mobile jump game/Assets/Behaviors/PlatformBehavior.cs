@@ -1,5 +1,4 @@
 using UnityEngine;
-using static UnityEngine.Vector3;
 
 [RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
@@ -8,6 +7,7 @@ public class PlatformBehavior : MonoBehaviour
     private Collider2D solid;
     private Rigidbody2D body;
     public Float_SO player_height, platform_speed, player_obj_height;
+    public Bool_SO gamePlaying;
 
     private void Awake()
     {
@@ -27,6 +27,9 @@ public class PlatformBehavior : MonoBehaviour
             solid.isTrigger = true; //sets the collider to trigger if the player falls below it
         }
 
-        transform.Translate(Vector3.down * Time.deltaTime * platform_speed.value);
+        if (gamePlaying.value)
+        {
+            transform.Translate(Vector3.down * Time.deltaTime * platform_speed.value);
+        }
     }
 }

@@ -9,4 +9,9 @@ public class Bool_SO : ScriptableObject
     {
         value = false;
     }
+
+    public void SetTrue()
+    {
+        value = true;
+    }
 }
