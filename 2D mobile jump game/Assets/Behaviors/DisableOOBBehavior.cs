@@ -1,15 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
-public class DetectOOBBehavior : MonoBehaviour
+public class DisableOOBBehavior : MonoBehaviour
 {
     public Float_SO LowerBound;
-
     void Update()
     {
         if (transform.position.y < LowerBound.value)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }

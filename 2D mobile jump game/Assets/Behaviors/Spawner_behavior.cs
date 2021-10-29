@@ -12,6 +12,7 @@ public class Spawner_behavior : MonoBehaviour
     {
         point = GetComponent<Transform>();
         InvokeRepeating(nameof(SpawnObj), 0, Delay.value);
+        
     }
 
     void SpawnObj()

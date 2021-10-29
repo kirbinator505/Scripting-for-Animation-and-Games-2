@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 481111961494550358}
   - component: {fileID: 481111961494550359}
   - component: {fileID: 481111961494550357}
+  - component: {fileID: -6660433977741278971}
   m_Layer: 7
-  m_Name: platform
+  m_Name: platform (spawned)
   m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -163,3 +164,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LowerBound: {fileID: 11400000, guid: 1764c8d8bcae54649a06686f1296ffc0, type: 2}
+--- !u!114 &-6660433977741278971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481111961494550379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1d509a5d739be642940e35c21e1446a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gamePlaying: {fileID: 11400000, guid: b01d9e55fa649334289daeabd0d9dfe0, type: 2}

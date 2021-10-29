@@ -8,7 +8,8 @@ public class TEMP_PlayerBehavior : MonoBehaviour
     private Vector2 direction; //temp
     public Float_SO Player_Height;
     private float jumpforce = 10f;
-    public UnityEvent SetGameActive;
+    public UnityEvent SetGamePlaying, gameStop;
+    public Bool_SO gamePlaying, gameActive;
 
     void Awake()
     {
@@ -18,12 +19,19 @@ public class TEMP_PlayerBehavior : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (gameActive.value)
         {
-            direction.y = jumpforce;
-            playerRB.AddForce(direction, ForceMode2D.Impulse);
-            SetGameActive.Invoke();
+            if (Input.GetButtonDown("Jump"))
+            {
+                direction.y = jumpforce;
+                playerRB.AddForce(direction, ForceMode2D.Impulse);
+                if (gamePlaying.value == false) //bring this into the updated player mover, have it on mouse or touch up or smthn, makes it so SetGamePlaying is only invoked once
+                {
+                    SetGamePlaying.Invoke();
+                }
+            }
+
+            Player_Height.value = playerRB.position.y;
         }
-        Player_Height.value = playerRB.position.y;
     }
 }
