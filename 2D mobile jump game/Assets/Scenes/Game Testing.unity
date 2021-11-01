@@ -528,7 +528,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410278147}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.5, z: 0}
+  m_LocalPosition: {x: 0, y: -4.5, z: -1}
   m_LocalScale: {x: 14, y: 1.0971, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -664,6 +664,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 7d02fb6427c9f5b46b1bc00cd9300036, type: 2}
+        m_TargetAssemblyTypeName: Bool_SO, Assembly-CSharp
+        m_MethodName: SetFalse
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -889,6 +901,7 @@ GameObject:
   - component: {fileID: 569614521}
   - component: {fileID: 569614522}
   - component: {fileID: 569614523}
+  - component: {fileID: 569614524}
   m_Layer: 6
   m_Name: player
   m_TagString: Player
@@ -908,7 +921,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 9
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1095,6 +1108,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   returnPosition: {fileID: 11400000, guid: 8569c074a83969f49abc9a5ab27cfc77, type: 2}
   objTransform: {fileID: 569614519}
+--- !u!114 &569614524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569614516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3c2493a02484b4897d5169a99d5b2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseDown: {x: 0, y: 0}
+  mouseUp: {x: 0, y: 0}
+  launchDirection: {x: 0, y: 0}
+  playerHeight: {fileID: 11400000, guid: 25d085c8afdcf754786cf94364aa835d, type: 2}
+  setGamePlaying:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 4d6827438ee0edb4eb16e0bb9035090f, type: 2}
+        m_TargetAssemblyTypeName: GameActions_SO, Assembly-CSharp
+        m_MethodName: RaiseAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  gamePlaying: {fileID: 11400000, guid: 6f1c3c982d4f2704ba5288a7ed7a6be7, type: 2}
+  gameActive: {fileID: 11400000, guid: 7d02fb6427c9f5b46b1bc00cd9300036, type: 2}
 --- !u!1 &572188201
 GameObject:
   m_ObjectHideFlags: 0
@@ -2850,7 +2896,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: TEMP press space to jump
+  m_Text: TEMP press space to jump / tap and drag
 --- !u!222 &1468538972
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3359,6 +3405,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 7d02fb6427c9f5b46b1bc00cd9300036, type: 2}
+        m_TargetAssemblyTypeName: Bool_SO, Assembly-CSharp
+        m_MethodName: SetTrue
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

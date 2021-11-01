@@ -27,4 +27,9 @@ public class Float_SO : ScriptableObject
             value += num;
         }
     }
+
+    public void ResetToZero()
+    {
+        value = 0f;
+    }
 }
