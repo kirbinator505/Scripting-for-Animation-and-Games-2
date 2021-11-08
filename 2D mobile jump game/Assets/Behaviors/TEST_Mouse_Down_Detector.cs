@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -43,7 +40,7 @@ public class TEST_Mouse_Down_Detector : MonoBehaviour
             launchDirection.value.x = -50;
         }
 
-        if (gameActive.value)
+        if (gameActive.value == true)
         {
             if (jumpAvailable.value)
             {

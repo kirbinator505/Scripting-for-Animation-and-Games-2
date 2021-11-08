@@ -1,24 +1,14 @@
 using UnityEngine;
+
 [RequireComponent(typeof(Rigidbody2D))]
 public class FloorBehavior : MonoBehaviour
 {
     private Rigidbody2D body;
-    public Float_SO bottomLimit;
     public Bool_SO gamePlaying;
 
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
-    }
-
-    public void MoveFloor()
-    {
-        
-    }
-
-    private void Start()
-    {
-        
     }
 
     private void Update()
@@ -28,7 +18,7 @@ public class FloorBehavior : MonoBehaviour
             transform.Translate(Vector3.down * Time.deltaTime * 0.5f);
         }
 
-        if (body.position.y < bottomLimit.value)
+        if (body.transform.position.y < -6)
         {
             gameObject.SetActive(false);
         }

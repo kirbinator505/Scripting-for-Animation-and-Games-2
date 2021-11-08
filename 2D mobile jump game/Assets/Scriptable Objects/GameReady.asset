@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 236c65bad7a08a44cb04d9cfc917ad71, type: 3}
-  m_Name: FloorBottom_Bound
+  m_Script: {fileID: 11500000, guid: 7cc4d675f95fc914388454211631a37d, type: 3}
+  m_Name: GameReady
   m_EditorClassIdentifier: 
-  value: -6.5

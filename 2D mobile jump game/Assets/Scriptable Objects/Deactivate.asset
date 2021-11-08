@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a750e3e791e7f449a44c5968720880a, type: 3}
-  m_Name: Bool_GamePlaying
+  m_Script: {fileID: 11500000, guid: 7cc4d675f95fc914388454211631a37d, type: 3}
+  m_Name: Deactivate
   m_EditorClassIdentifier: 
-  value: 1
