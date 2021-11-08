@@ -15,6 +15,6 @@ public class ResetPositionBehavior : MonoBehaviour
 
     public void ResetTransform()
     {
-        objTransform.position = returnPosition.position;
+        objTransform.position = returnPosition.value;
     }
 }
