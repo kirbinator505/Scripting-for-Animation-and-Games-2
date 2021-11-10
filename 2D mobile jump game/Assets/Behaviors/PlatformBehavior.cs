@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(Rigidbody2D))]
@@ -32,4 +33,5 @@ public class PlatformBehavior : MonoBehaviour
             transform.Translate(Vector3.down * Time.deltaTime * platform_speed.value);
         }
     }
+
 }

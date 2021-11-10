@@ -151,6 +151,21 @@ MonoBehaviour:
   platform_speed: {fileID: 11400000, guid: b5adaaa18d55bf64c85b36b6f8128d8c, type: 2}
   player_obj_height: {fileID: 11400000, guid: 44a8e2d3fb09b314c8b4a0012a637d02, type: 2}
   gamePlaying: {fileID: 11400000, guid: 6f1c3c982d4f2704ba5288a7ed7a6be7, type: 2}
+  addScore:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: e14b03aad9ea6254c97ba02b973f84d9, type: 2}
+        m_TargetAssemblyTypeName: Float_SO, Assembly-CSharp
+        m_MethodName: AddToValue
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &481111961494550357
 MonoBehaviour:
   m_ObjectHideFlags: 0
