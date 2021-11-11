@@ -12,16 +12,16 @@ public class ScoreDetectorBehavior : MonoBehaviour
         pointAvailable = true;
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (pointAvailable)
         {
             addPoint.Invoke();
-            //pointAvailable = false;
+            pointAvailable = false;
         }
         Debug.Log("hit");
     }
-/*
+
     private void Update()
     {
         if (gamePlaying.value)
@@ -29,5 +29,4 @@ public class ScoreDetectorBehavior : MonoBehaviour
             transform.Translate(Vector3.down * Time.deltaTime * platform_speed.value);
         }
     }
-    */
 }
