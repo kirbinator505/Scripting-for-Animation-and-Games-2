@@ -22,10 +22,10 @@ public class Float_SO : ScriptableObject
 
     public void LimitedAddToValue(float num, float limit)
     {
-        if (value < limit)
-        {
-            value += num;
-        }
+       if (value < limit)
+       {
+           value += num;
+       }
     }
 
     public void ResetToZero()
