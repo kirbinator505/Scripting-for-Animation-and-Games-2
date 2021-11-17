@@ -20,14 +20,6 @@ public class Float_SO : ScriptableObject
         value = num / 2;
     }
 
-    public void LimitedAddToValue(float num, float limit)
-    {
-       if (value < limit)
-       {
-           value += num;
-       }
-    }
-
     public void ResetToZero()
     {
         value = 0f;

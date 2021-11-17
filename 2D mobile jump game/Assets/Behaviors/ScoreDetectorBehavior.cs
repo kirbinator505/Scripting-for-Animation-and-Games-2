@@ -19,7 +19,6 @@ public class ScoreDetectorBehavior : MonoBehaviour
             addPoint.Invoke();
             pointAvailable = false;
         }
-        Debug.Log("hit");
     }
 
     private void Update()

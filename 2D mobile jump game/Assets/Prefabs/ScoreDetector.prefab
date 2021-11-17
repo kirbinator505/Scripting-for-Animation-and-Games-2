@@ -114,6 +114,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 5e33343ee05378f44a5d96ff2db8bdb0, type: 2}
+        m_TargetAssemblyTypeName: GameActions_SO, Assembly-CSharp
+        m_MethodName: RaiseAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Float_SO, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   gamePlaying: {fileID: 11400000, guid: 6f1c3c982d4f2704ba5288a7ed7a6be7, type: 2}
   platform_speed: {fileID: 11400000, guid: b5adaaa18d55bf64c85b36b6f8128d8c, type: 2}
 --- !u!61 &6987604182178408879
