@@ -25,22 +25,11 @@ public class TEST_Mouse_Down_Detector : MonoBehaviour
         launchDirection.value.x = (mouseDown.x - mouseUp.x);
         launchDirection.value.y = (mouseDown.y - mouseUp.y);
 
-        if (launchDirection.value.y > 100)
-        {
-            launchDirection.value.y = 100;
-        }
+        launchDirection.value.y = Mathf.Clamp(launchDirection.value.y, 0, 100);
 
-        if (launchDirection.value.x > 50)
-        {
-            launchDirection.value.x = 50;
-        }
+        launchDirection.value.x = Mathf.Clamp(launchDirection.value.x, -50, 50);
 
-        if (launchDirection.value.x < -50)
-        {
-            launchDirection.value.x = -50;
-        }
-
-        if (gameActive.value == true)
+        if (gameActive.value)
         {
             if (jumpAvailable.value)
             {
