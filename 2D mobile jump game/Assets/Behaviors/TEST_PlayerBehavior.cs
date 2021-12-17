@@ -21,7 +21,8 @@ public class TEST_PlayerBehavior : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        jumpAvailable.value = true;
+        if(other.gameObject.CompareTag("Platform"))
+            jumpAvailable.value = true;
     }
 
     public void LaunchPlayer()
